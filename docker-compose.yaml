@@ -1,0 +1,41 @@
+version: '3'
+services:
+#---backend---
+  redis:
+    restart: always
+    image: redis:latest
+
+  celery:
+    restart: always
+    build:
+      context: ./celery
+      dockerfile: Dockerfile
+    command: celery -A main worker --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - USERS=[1234567890]
+      - API_KEY=123:abc
+    depends_on:
+      - redis
+
+  backend:
+    restart: always
+    command: uvicorn main:app --host 0.0.0.0 --port 80
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    depends_on:
+      - celery
+
+#---frontend---
+  frontend:
+    image: nginx:latest
+    restart: always
+    volumes:
+      - ./frontend/html:/usr/share/nginx/html
+      - ./frontend/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

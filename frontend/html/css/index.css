@@ -1,0 +1,711 @@
+.sectionBg{
+    margin-top: 120px;
+}
+
+.homeBg{
+    background: url('../img/home/bg.jpg') no-repeat center / cover;
+    padding: 93px 70px;
+    border-radius: 40px;
+}
+
+.homeText{
+    color: #fff;
+    width: 60%;
+}
+
+.homeText h1{
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.homeText h2{
+    font-size: 22px;
+    font-weight: unset;
+    margin-top: 15px;
+}
+
+.homeBtnContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.homeBtnContainer a:nth-child(2){
+    margin-left: 25px;
+}
+
+/* advantages */
+
+.advantages{
+    margin-top: 20px;
+}
+
+.advantagesContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #FF6F22;
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+
+.advantageItem{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 20vw;
+}
+
+.advantageItem p{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* about */
+
+.aboutContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.aboutText{
+    width: calc(100% - 500px);
+}
+
+.aboutText p{
+    color: #999;
+    margin-top: 5px;
+}
+
+.aboutImg{
+    width: 456px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.aboutImg img{
+    width: 100%;
+}
+
+/* ourEquipment */
+
+.ourEquipmentContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: stretch;
+}
+
+.equipmentItem{
+    text-align: center;
+    margin-top: 30px;
+    margin: 30px 20px 0;
+}
+
+.equipmentImg{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.equipmentImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.equipmentItem h2{
+    margin-top: 5px;
+    font-size: 18px;
+    color: #010101;
+}
+
+.equipmentItem:hover .equipmentImg img{
+    transform: scale(1.1, 1.1);
+}
+
+/* banner */
+
+.bannerContent{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.bannerText{
+    width: 60%;
+    padding: 60px;
+    color: #fff;
+    background: #FF6F22;
+}
+
+.bannerText h2{
+    font-size: 28px;
+}
+
+.bannerText ul{
+    margin-top: 20px;
+}
+
+.bannerText ul li{
+    list-style: outside;
+    margin-top: 15px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.bannerText a{
+    margin-top: 25px;
+}
+
+.bannerImg{
+    position: relative;
+    width: 40%;
+}
+
+.bannerMaskImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: linear-gradient(90deg, #FF6F22, #ff6f2200);
+}
+
+.bannerImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* clients */
+
+.clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 36px;
+}
+
+.clientItem{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.clientItemImg{
+    width: 120px;
+    height: 120px;
+    filter: grayscale(100);
+    transition: .4s;
+}
+
+.clientItemImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.clientItem p{
+    margin-top: 10px;
+    font-size: 20px;
+    transition: .4s;
+    color: #999;
+}
+
+.clientItem:hover .clientItemImg{
+    filter: grayscale(0);
+}
+
+.clientItem:hover p{
+    color: #010101;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    background: #131313;
+    padding: 60px 0;
+    margin-top: 90px;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerForm{
+    width: 35%;
+}
+
+.footerForm h2{
+    font-size: 28px;
+    color: #fff;
+}
+
+.input{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 16px 0;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.footerFormSubmit{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit{
+    display: inline-block;
+}
+
+.footerFormSubmit p{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.footerFormSubmit p a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footerMap{
+    width: 55%;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+
+
+@media(min-width: 320px) and (max-width: 480px){
+
+    .homeBg{
+        padding: 45px 15px;
+        border-radius: 20px;
+    }
+    
+    .homeText{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .homeText h1{
+        font-size: 22px;
+    }
+    
+    .homeText h2{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .homeBtnContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    .homeBtnContainer a{
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .homeBtnContainer a:nth-child(2){
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    /* advantagesContainer */
+
+    .advantagesContainer{
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .advantageItem{
+        width: 38vw;
+        margin: 20px 0;
+    }
+
+    .advantageItem p{
+        font-size: 14px;
+    }
+
+    /* about */
+
+    .aboutContent{
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .aboutText{
+        width: 100%;
+    }
+
+    .aboutImg{
+        width: 100%;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    
+    /* ourEquipment */
+
+    .ourEquipmentContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: stretch;
+    }
+
+    .equipmentItem{
+        margin: 25px 5px 0;
+    }
+
+    .equipmentImg{
+        width: 100%;
+        height: 28vw;
+    }
+
+    .equipmentItem h2{
+        font-size: 14px;
+    }
+
+    /* banner */
+
+    .bannerContent{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        border-radius: 20px;
+    }
+
+    .bannerText{
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .bannerText h2{
+        font-size: 24px;
+    }
+
+    .bannerImg{
+        width: 100%;
+    }
+
+    .bannerMaskImg{
+        height: 101%;
+        background: linear-gradient(0deg, #FF6F22, #ff6f2200);
+    }
+
+    /* clients */
+
+    .clients{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0px;
+    }
+
+    .clientItem{
+        margin-top: 30px;
+    }
+
+    /* footer */
+
+    .footerContent{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footerForm{
+        width: 100%;
+    }
+
+    .footerMap{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+@media(min-width: 480px) and (max-width: 680px){
+    .homeBg{
+        padding: 60px 30px;
+        border-radius: 20px;
+    }
+    
+    .homeText{
+        width: 100%;
+    }
+    
+    .homeText h1{
+        font-size: 32px;
+    }
+    
+    .homeText h2{
+        font-size: 18px;
+    }
+    
+    /* advantagesContainer */
+
+    .advantagesContainer{
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .advantageItem{
+        width: 40vw;
+        margin: 20px 0;
+    }
+
+    .advantageItem p{
+        font-size: 14px;
+    }
+
+    /* about */
+
+    .aboutContent{
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .aboutText{
+        width: 100%;
+    }
+
+    .aboutImg{
+        width: 100%;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    /* ourEquipment */
+
+    .ourEquipmentContent{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .equipmentItem{
+        margin: 25px 5px 0;
+    }
+
+    .equipmentImg{
+        width: 100%;
+        height: 20vw;
+    }
+
+    .equipmentItem h2{
+        font-size: 14px;
+    }
+
+    /* banner */
+
+    .bannerContent{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        border-radius: 20px;
+    }
+
+    .bannerText{
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .bannerText h2{
+        font-size: 24px;
+    }
+
+    .bannerImg{
+        width: 100%;
+    }
+
+    .bannerMaskImg{
+        height: 101%;
+        background: linear-gradient(0deg, #FF6F22, #ff6f2200);
+    }
+
+    /* clients */
+
+    .clients{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 0px;
+    }
+
+    .clientItem{
+        margin-top: 30px;
+    }
+    
+
+    /* footer */
+
+    .footerContent{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footerForm{
+        width: 100%;
+    }
+
+    .footerMap{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+}
+
+
+@media(min-width: 680px) and (max-width: 920px){
+    .homeBg{
+        padding: 60px 30px;
+    }
+        
+    .homeText{
+        width: 90%;
+    }
+
+    .homeText h1{
+        font-size: 36px;
+    }
+    
+    .homeText h2{
+        font-size: 20px;
+    }
+
+    /* about */
+
+    .aboutContent{
+        margin-top: 20px;
+    }
+
+    .aboutText{
+        width: calc(100% - 240px);
+    }
+
+    .aboutText p{
+        font-size: 14px;
+    }
+
+    .aboutImg{
+        width: 220px;
+    }
+    
+    /* ourEquipment */
+
+    .ourEquipmentContent{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .equipmentItem{
+        margin: 25px 5px 0;
+    }
+
+    .equipmentImg{
+        width: 100%;
+        height: 20vw;
+    }
+
+    .equipmentItem h2{
+        font-size: 14px;
+    }
+
+    /* banner */
+
+    .bannerText{
+        padding: 40px;
+    }
+
+    /* clients */
+
+    .clients{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 0px;
+    }
+
+    .clientItem{
+        margin-top: 30px;
+    }
+    
+    /* footer */
+
+    .footerContent{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footerForm{
+        width: 100%;
+    }
+
+    .footerMap{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+@media(min-width: 920px) and (max-width: 1320px){
+    .homeText{
+        width: 70%;
+    }
+
+      /* about */
+
+      .aboutContent{
+        margin-top: 20px;
+    }
+
+    .aboutText{
+        width: calc(100% - 380px);
+    }
+
+    .aboutImg{
+        width: 360px;
+    }
+
+
+    /* ourEquipment */
+
+    .ourEquipmentContent{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .equipmentItem{
+        margin: 25px 5px 0;
+    }
+
+    .equipmentImg{
+        width: 100%;
+        height: 15vw;
+    }
+
+    .equipmentItem h2{
+        font-size: 14px;
+    }
+
+    /* footer */
+
+    .footerFormSubmit{
+        flex-wrap: wrap;
+    }
+
+    .footerFormSubmit p{
+        margin-top: 15px;
+    }
+}
+
+/*  */
