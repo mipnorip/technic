@@ -206,11 +206,12 @@
     height: 120px;
     filter: grayscale(100);
     transition: .4s;
+    display: flex;
+    align-items: center;
 }
 
 .clientItemImg img{
     width: 100%;
-    height: 100%;
 }
 
 .clientItem p{
